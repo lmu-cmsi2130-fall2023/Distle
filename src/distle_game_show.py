@@ -14,7 +14,7 @@ MAX_GUESSES: int = 10
 
 # Number of games to be played, useful for testing any random
 # elements of your player
-N_GAMES: int = 1
+N_GAMES: int = 100
 
 # The secret word to be guessed, which can be either:
 #    - A str that you hard-code for testing purposes
@@ -27,10 +27,10 @@ VERBOSE: bool = True
 
 # Whether or not the game should be played by a human at the terminal (False)
 # or your AI DistlePlayer (True)
-AI_PLAYER: bool = False
+AI_PLAYER: bool = True
 
 # The path to the dictionary file that you wish to play from
-DICTIONARY_PATH: str = "../dat/dictionary14.txt"
+DICTIONARY_PATH: str = "../dat/dictionary6.txt"
 
 # Main game loop begun below!
 game = DistleGame(DICTIONARY_PATH, VERBOSE, DistlePlayer() if AI_PLAYER else None)
